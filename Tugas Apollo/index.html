@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOLLO - Learn, Build, & Showcase All in One Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Menggunakan font Poppins dari Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'apollo-blue': '#3478F6',
+              'apollo-bg': '#EDEBFE', // Latar belakang Features
+              'apollo-cta-bg': '#E1EBFE', // Latar belakang CTA
+              'apollo-dark': '#121827', // Latar belakang Footer
+              'text-light': '#D2D5DB', // Teks di Footer
+              // Warna ikon kustom sesuai desain
+              'lms-icon-bg': '#CADFFF',
+              'pm-icon-bg': '#BFEEE9',
+              'port-icon-bg': '#FFCACA',
+              'lms-icon': '#2B7FFF',
+              'pm-icon': '#00BBA7',
+              'port-icon': '#FF2B2B',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-poppins antialiased">
+
+    <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-24 h-24 flex items-center justify-between">
+            <div class="shrink-0">
+                <a href="#" class="text-xl font-bold text-apollo-blue">APOLLO</a> 
+                </div>
+
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#hero" class="text-sm font-medium text-gray-800 hover:text-apollo-blue p-2">Home</a>
+                <a href="#features" class="text-sm font-medium text-gray-800 hover:text-apollo-blue p-2">My Learning</a>
+                <a href="#" class="text-sm font-medium text-apollo-blue border border-apollo-blue rounded-lg px-4 py-2 hover:bg-apollo-blue hover:text-white transition duration-200">
+                    Sign In
+                </a>
+                <a href="#" class="text-sm font-medium text-white bg-apollo-blue rounded-lg px-4 py-2 hover:bg-blue-700 transition duration-200">
+                    Sign Up
+                </a>
+            </nav>
+
+            <button id="hamburger-button" class="lg:hidden text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden w-full bg-white border-t border-gray-200 py-4">
+            <a href="#hero" class="block text-base font-medium text-gray-800 hover:bg-gray-100 px-6 py-2">Home</a>
+            <a href="#features" class="block text-base font-medium text-gray-800 hover:bg-gray-100 px-6 py-2">My Learning</a>
+            <div class="flex flex-col space-y-3 px-6 pt-4">
+                <a href="#" class="text-sm font-medium text-apollo-blue border border-apollo-blue rounded-lg px-4 py-2 text-center">Sign In</a>
+                <a href="#" class="text-sm font-medium text-white bg-apollo-blue rounded-lg px-4 py-2 text-center">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-12 lg:py-24 max-w-7xl mx-auto px-6 lg:px-24">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <div class="lg:w-1/2 flex justify-center lg:order-2"> 
+                    <img src="/assets/apollo.png" alt="Apollo Illustration" class="w-full max-w-md lg:max-w-lg">
+                </div>
+
+                <div class="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left lg:order-1">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-apollo-blue leading-tight mb-4">
+                        LEARN, BUILD, & SHOWCASE <br> ALL IN ONE PLATFORM
+                    </h1>
+                    <p class="text-base lg:text-lg text-gray-700 mb-8 max-w-xl">
+                        APOLLO is the Advanced Programming and Online Learning Laboratory that combines LMS, Project Management, and Portfolio in a seamless ecosystem. Learn new skills, collaborate on real projects, and showcase your achievements—all within one integrated platform.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full justify-center lg:justify-start">
+                        <a href="#" class="text-base font-bold text-white bg-apollo-blue rounded-lg px-6 py-3 hover:bg-blue-700 transition duration-200 w-full sm:w-auto text-center">
+                            Get Started for Free
+                        </a>
+                        <a href="#features" class="text-base font-bold text-apollo-blue border-2 border-apollo-blue rounded-lg px-6 py-3 hover:bg-apollo-blue hover:text-white transition duration-200 w-full sm:w-auto text-center">
+                            Explore Features
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-100">
+
+        <section id="features" class="bg-apollo-bg py-24 px-6 lg:px-24">
+            <div class="flex flex-col items-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-semibold mb-2 text-center">
+                    What You’ll Get With Apollo
+                </h2>
+                <p class="text-base lg:text-lg text-gray-700 text-center max-w-2xl">
+                    A powerful ecosystem designed to help you learn faster, build smarter, and showcase better.
+                </p>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-300 shadow-xl flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-lms-icon-bg p-4 rounded-xl mb-4">
+                        <div class="bg-lms-icon p-2 rounded-lg flex items-center justify-center h-full">
+                            <img src="/assets/apprenticeship.png" alt="LMS Icon" class="w-8 h-8"> 
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3">Learning Management System</h3>
+                    <p class="text-sm text-gray-700">
+                        Master programming skills with structured modules, interactive lessons, quizzes, and coding challenges. Learn by doing, track your progress, and stay on the path to becoming job-ready.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-300 shadow-xl flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-pm-icon-bg p-4 rounded-xl mb-4">
+                        <div class="bg-pm-icon p-2 rounded-lg flex items-center justify-center h-full">
+                            <img src="/assets/closure.png" alt="Project Management Icon" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3">Project Management</h3>
+                    <p class="text-sm text-gray-700">
+                        Turn your knowledge into real experience. Collaborate with teammates, manage tasks, and track progress — just like working on real-world projects.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-300 shadow-xl flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-port-icon-bg p-4 rounded-xl mb-4">
+                        <div class="bg-port-icon p-2 rounded-lg flex items-center justify-center h-full">
+                            <img src="/assets/target.png" alt="Portfolio Management Icon" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3">Portfolio Management</h3>
+                    <p class="text-sm text-gray-700">
+                        Showcase your best work in one place. Every project you build in Apollo can be instantly added to your portfolio to share with recruiters, peers, and the world.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cta" class="bg-apollo-cta-bg py-24 px-6 lg:px-24">
+            <div class="max-w-7xl mx-auto flex flex-col items-center text-center p-8 lg:p-16 rounded-2xl">
+                <img src="/assets/rocket.png" alt="Rocket Icon" class="w-12 h-12 mb-6">
+                
+                <h2 class="text-3xl lg:text-4xl font-semibold mb-4">
+                    Ready to Launch Your Journey?
+                </h2>
+                <p class="text-base lg:text-lg text-gray-700 mb-8 max-w-3xl">
+                    Join Apollo today and experience the all-in-one ecosystem to learn programming, build real projects, and showcase your portfolio.
+                </p>
+                <a href="#" class="text-xl font-semibold text-white bg-apollo-blue rounded-lg px-8 py-4 hover:bg-blue-700 transition duration-200">
+                    Get Started Free
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apollo-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-24 py-16 lg:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-20">
+
+                <div class="md:col-span-2 flex flex-col space-y-4">
+                    <a href="#" class="text-2xl font-bold text-white">APOLLO</a> 
+                    <p class="text-sm text-text-light max-w-sm">
+                        Advanced Programming and Online Learning Laboratory.
+                    </p>
+
+                    <div class="pt-4 space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-apollo-blue" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.42 15.42 0 006.57 6.57l2.12-2.12a.997.997 0 01.99-.21c1.37.45 2.8.69 4.28.69.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.74 21 3 13.26 3 3c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.48.24 2.91.69 4.28a.997.997 0 01-.21.99l-2.12 2.12z"/></svg>
+                            <span class="text-xs text-text-light">+62 1234 5678 9101</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-apollo-blue" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <span class="text-xs text-text-light">apollo@apollo.com</span>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <svg class="w-4 h-4 text-apollo-blue mt-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            <span class="text-xs text-text-light">Kampus 4 Universitas Ahmad Dahlan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+                    <a href="#hero" class="text-sm text-text-light hover:text-apollo-blue transition duration-200">Home</a>
+                    <a href="#features" class="text-sm text-text-light hover:text-apollo-blue transition duration-200">Features</a>
+                    <a href="#" class="text-sm text-text-light hover:text-apollo-blue transition duration-200">How it works</a>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                    <h4 class="text-lg font-semibold text-white">Resources</h4>
+                    <a href="#" class="text-sm text-text-light hover:text-apollo-blue transition duration-200">Support</a>
+                    <a href="#" class="text-sm text-text-light hover:text-apollo-blue transition duration-200">Privacy policy</a>
+                    <a href="#" class="text-sm text-text-light hover:text-apollo-blue transition duration-200">Terms of use</a>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-6 border-t border-gray-700 flex justify-center">
+                <p class="text-xs text-text-light">©2025 APOLLO - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      /**
+       * Fungsionalitas: Toggle (Buka/Tutup) Mobile Menu
+       */
+      document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('hamburger-button');
+        const menu = document.getElementById('mobile-menu');
+
+        // Pastikan kedua elemen ada sebelum menambahkan listener
+        if (button && menu) {
+          button.addEventListener('click', () => {
+            // Menggunakan classList.toggle('hidden') untuk menampilkan/menyembunyikan menu
+            menu.classList.toggle('hidden');
+          });
+        }
+      });
+    </script>
+</body>
+</html>
